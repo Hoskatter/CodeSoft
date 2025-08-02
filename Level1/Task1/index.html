@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+        <img src="./images/unity.svg" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+  </div>
+  </nav>
+
+  <section id="home" class="home">
+        <div class="txt">
+            <div class="hedr">
+            <h1>Hello! I am <span>Manoj H</span></h1><br>
+            <h3>Fresher</h3><br>
+            <p>I'am an Entry-level Full Stack Developer <br> skilled in Java, SQl, And MERN Stack. </p>
+            <br>
+            <button class="btn">Download CV</button>
+            
+            </div>
+        </div>
+        <div class="home-img">
+            <img class="img1" src="images/img1.PNG" alt="">
+        </div>
+        
+  </section>
+
+  <section id="about" class="about">
+    <div class="home-img2">
+        <img class="img4" src="images/img4.PNG" alt="">
+    </div>
+    <div class="info">
+        <h1>About</h1>
+        <p>I am a passionate and enthusiastic Full Stack Developer with a background in BCA and currently pursuing MCA. I have hands-on experience in building web applications using Java, Python, and the MERN Stack (MongoDB, Express.js, React.js, Node.js). Skilled in both frontend and backend development, I enjoy creating responsive, user-friendly interfaces and writing clean, efficient server-side code. Eager to apply my knowledge and grow as a developer by contributing to real-world projects and innovative teams.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="head">
+        <h1>My Skills</h1>
+    </div>
+    <div class="container">
+        <div class="skill-box">
+            <img src="images/html.svg" alt="" class="skill-icon">
+            <h3>HTML 5</h3>
+            <p>Used to structure web content with semantic and accessible elements.</p>
+        </div>
+        <div class="skill-box">
+            <img src="images/css3.svg" alt="" class="skill-icon">
+            <h3>CSS3</h3>
+            <p>Responsible for styling and responsive layouts using Flexbox and Grid.</p>
+        </div>
+        <div class="skill-box">
+            <img src="images/javascript.svg" alt="" class="skill-icon">
+            <h3>JAVASCRIPT</h3>
+            <p>Adds interactivity and dynamic behavior to web pages and apps.</p>
+        </div>
+        <div class="skill-box">
+            <img src="images/sql.svg" alt="" class="skill-icon">
+            <h3>SQL</h3>
+            <p>Used to manage and query relational databases like MySQL or Oracle.</p>
+        </div>
+        <div class="skill-box">
+            <img src="images/react.svg" alt="" class="skill-icon">
+            <h3>REACT</h3>
+            <p>JavaScript library for building fast, component-based user interfaces.</p>
+        </div>
+        <div class="skill-box">
+            <img src="images/mongodb.svg" alt="" class="skill-icon">
+            <h3>MongoDB</h3>
+            <p>NoSQL database used for storing JSON-like documents for modern web apps.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="head1">
+        <h1>Projects</h1>
+    </div>
+    <div class="container1">
+    <div class="prj">
+        <img src="images/FOOD.jpeg" alt="">
+        <h3>ONLINE FOOD DELIVERY SYSTEM</h3>
+    </div>
+    <div class="prj">
+        <img src="images/SAMS.jpeg" alt="">
+        <h3>STUDENT ATTENDANCE MANAGEMENT SYSTEM</h3>
+    </div>
+    <div class="prj">
+        <img src="images/TODO.jpeg" alt="">
+        <h3>TODO APPLICATION</h3>
+    </div>
+    </div>
+  </section>
+
+   <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+
+      <form action="#" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
